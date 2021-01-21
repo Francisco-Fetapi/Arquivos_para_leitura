@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="../font-awesome-4.5.0/css/font-awesome.min.css">
+</head>
+<body class="bg-light"> 
+    
+    <div class="container-fluid">
+
+        <div class="p-4">
+        
+            <fieldset>
+                <legend class="ml-auto mr-auto"><span class=" mr-2 fa fa-user"></span> Dados pessoais</legend>
+                <div class="row form-group">
+                    <label for="nome" class="col-xs-3">Nome</label>
+                    <div class="col">
+                        <input type="text" name="nom" class="form-control" id="nome" placeholder="Digite seu nome">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="Snome" class="col-xs-3">Sobrenome</label>
+                    <div class="col">
+                        <input type="text" name="sobn" class="form-control" id="Snome"placeholder="Digite seu sobrenome">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="genero" class="col-xs-3">Género</label>
+                    <div class="col">
+                        <select id="genero" class="form-control">
+                            <option>Masculino</option>
+                            <option>Feminino</option>
+                        </select>
+                    </div>
+                </div>
+                <button class="btn btn-primary float-right">Cadastrar</button>
+            </fieldset>
+        </div>
+        <div class="alert d-none">
+            <b>Info:</b> Dados incorretos
+        </div>
+        <table class="table table-hover d-none">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Sobrenome</th>
+                    <th>Genero</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+
+    <script src="../jquery/jquery.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html> 
+<html> 
+ 
+<head> 
+ <meta charset="utf-8"> 
+ <title>Example of Bootstrap 3 Forms with Feedback Icons</title> 
+ <meta name="viewport" content="width=device-width, initial-scale=1"> 
+ <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css"> 
+ <!-- Optional Bootstrap theme --> 
+ <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.css"> 
+ 
+</head> 
+ 
+<body> 
+ 
+ <form class="form-horizontal"> 
+  <div class="form-group has-success has-feedback"> 
+   <label class="col-xs-2 control-label" for="inputSuccess">Username</label> 
+   <div class="col-xs-10"> 
+    <input type="text" id="inputSuccess" class="form-control" placeholder="Input with success"> 
+    <span class="glyphicon glyphicon-ok form-control-feedback"></span> 
+    <span class="help-block">Username is available</span> 
+   </div> 
+  </div> 
+  <div class="form-group has-warning has-feedback"> 
+   <label class="col-xs-2 control-label" for="inputWarning">Password</label> 
+   <div class="col-xs-10"> 
+    <input type="password" id="inputWarning" class="form-control" placeholder="Input with warning"> 
+    <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span> 
+    <span class="help-block">Password strength: Weak</span> 
+   </div> 
+  </div> 
+  <div class="form-group has-error has-feedback"> 
+   <label class="col-xs-2 control-label" for="inputError">Email</label> 
+   <div class="col-xs-10"> 
+    <input type="email" id="inputError" class="form-control" placeholder="Input with error"> 
+    <span class="glyphicon glyphicon-remove form-control-feedback"></span> 
+    <span class="help-block">Please enter a valid email address</span> 
+   </div> 
+  </div> 
+ </form> 
+ 
+ <script src="bootstrap/js/jquery.js"></script> 
+ <script src="bootstrap/js/bootstrap.js"></script> 
+</body> 
+ 
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html> 
+<html> 
+ 
+<head> 
+ <meta name="viewport" content="width=device-width, initial-scale=1"> 
+</head> 
+ 
+<body> 
+ 
+ <h1>Find Device</h1> 
+ 
+ <input type="button" value="check Device" onclick="chk_agent();"> 
+ 
+ <script> 
+  function chk_agent() 
+  { 
+   var UA = navigator.userAgent.toLowerCase(); 
+ 
+   if (UA.indexOf("android") > -1) 
+   { 
+    alert("This is Android Device"); 
+   } 
+   else if (UA.indexOf("ipad") > -1) 
+   { 
+    alert("This is ipad Device"); 
+   } 
+   else if (UA.indexOf("iphone") > -1) 
+   { 
+    alert("This is iphone Device"); 
+   } 
+   else if (UA.indexOf("ipod") > -1) 
+   { 
+    alert("This is ipod Device"); 
+   } 
+   else if (UA.indexOf("windows phone") > -1) 
+   { 
+    alert("This is windows phone"); 
+   } 
+   else if (UA.indexOf("chrome") > -1) 
+   { 
+    alert("This is chrome browser"); 
+   } 
+   else if (UA.indexOf("firefox") > -1) 
+   { 
+    alert("This is firefox browser"); 
+   } 
+ 
+  } 
+ </script> 
+ 
+</body> 
+ 
+</html>

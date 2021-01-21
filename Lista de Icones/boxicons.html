@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Icones BoxIcon</title>
+    <link rel="stylesheet" href="boxicons/css/boxicons.min.css">
+    <style>
+        body{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        div{
+            width:45%;
+            border: 2px solid gray;
+            font-size: 19px;
+            text-align: center;
+        }
+        span{
+            color: black;
+            font-size: 42px;
+            padding:2px 4px;
+        }
+    </style>
+</head>
+<body>
+
+   <script>
+       var a = 'bxl-500px,bxl-adobe,bxl-airbnb,bxl-algolia,bxl-amazon,bxl-android,bxl-angular,bxl-apple,bxl-audible,bxl-baidu,bxl-behance,bxl-bing,bxl-bitcoin,bxl-blogger,bxl-bootstrap,bxl-chrome,bxl-codepen,bxl-creative,bxl-css3,bxl-dailymotion,bxl-deviantart,bxl-dev,bxl-digg,bxl-digitalocean,bxl-discord,bxl-discourse,bxl-dribbble,bxl-dropbox,bxl-drupal,bxl-ebay,bxl-edge,bxl-etsy,bxl-facebook,bxl-facebook,bxl-facebook,bxl-figma,bxl-firefox,bxl-flickr,bxl-flickr,bxl-foursquare,bxl-git,bxl-github,bxl-gitlab,bxl-google,bxl-google,bxl-google,bxl-html5,bxl-imdb,bxl-instagram,bxl-instagram,bxl-internet,bxl-invision,bxl-javascript,bxl-joomla,bxl-jquery,bxl-jsfiddle,bxl-kickstarter,bxl-less,bxl-linkedin,bxl-linkedin,bxl-magento,bxl-mailchimp,bxl-mastercard,bxl-medium,bxl-medium,bxl-medium,bxl-messenger,bxl-microsoft,bxl-nodejs,bxl-opera,bxl-patreon,bxl-paypal,bxl-periscope,bxl-pinterest,bxl-pinterest,bxl-play,bxl-pocket,bxl-product,bxl-quora,bxl-react,bxl-redbubble,bxl-reddit,bxl-redux,bxl-sass,bxl-shopify,bxl-skype,bxl-slack,bxl-slack,bxl-snapchat,bxl-soundcloud,bxl-spotify,bxl-squarespace,bxl-stack,bxl-stripe,bxl-telegram,bxl-trello,bxl-tumblr,bxl-twitch,bxl-twitter,bxl-unsplash,bxl-vimeo,bxl-visa,bxl-vk,bxl-vuejs,bxl-whatsapp,bxl-whatsapp,bxl-wikipedia,bxl-windows,bxl-wix,bxl-wordpress,bxl-yahoo,bxl-yelp,bxl-youtube';
+       a = a.split(',');
+       console.log(a);
+       a.forEach((el,ind) => {
+                document.body.innerHTML += `<div><span class='bx ${el}'></span> <br> bx ${el} </div>`;
+            });
+       
+       
+        // var req = new XMLHttpRequest();
+        // req.open('POST','box.css');
+        // req.send(null);
+        // req.onload = function(){
+        //     var texto = req.responseText;
+        //     // texto.replace(/\{\w+\}/gi,' | ');
+        //     texto = texto.match(/bxl-\w+/gi);
+        //     texto.forEach((el,ind) => {
+        //         document.body.innerHTML += `<div><span class='bx ${el}'></span>: bx ${el} </div>`;
+        //     });
+        //     console.log(texto.toString());
+        // }
+
+   </script>
+</body>
+</html>

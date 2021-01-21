@@ -1,0 +1,5 @@
+.row div[class^='col-xs']{
+    background-color: cadetblue;
+    color: white;
+    border: 1px solid rgba(0, 0, 0, 0.363);
+}

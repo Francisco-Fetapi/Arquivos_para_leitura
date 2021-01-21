@@ -1,0 +1,44 @@
+<!DOCTYPE html> 
+<html> 
+ 
+<head> 
+ <meta charset="utf-8"> 
+ <title>Example of Placing HTML inside Bootstrap 3 Tooltips</title> 
+ <meta name="viewport" content="width=device-width, initial-scale=1"> 
+ <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css"> 
+ <!-- Optional Bootstrap theme --> 
+ <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.css"> 
+ 
+ <style type="text/css"> 
+  .bs-example { 
+   margin: 100px; 
+  } 
+ </style> 
+ 
+</head> 
+ 
+<body> 
+ 
+ <div class="bs-example"> 
+  <p> 
+   <a href="#" data-toggle="tooltip" id="myTooltip">HTML Tooltip Example</a> 
+  </p> 
+ </div> 
+ 
+ <script src="bootstrap/js/jquery.js"></script> 
+ <script src="bootstrap/js/bootstrap.js"></script> 
+ 
+ <script type="text/javascript"> 
+  $(document).ready(function() 
+  { 
+   $("#myTooltip").tooltip( 
+   { 
+    title: "<h4><img src='img/avatar.jpg' style='width:26px;' alt='Smiley'> Hello, <b>I'm</b> <i>Profile picture!</i></h4>", 
+    html: true, 
+   }); 
+  }); 
+ </script> 
+ 
+</body> 
+ 
+</html>

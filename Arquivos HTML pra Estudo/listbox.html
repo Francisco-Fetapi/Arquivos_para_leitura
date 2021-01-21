@@ -1,0 +1,39 @@
+<!DOCTYPE html> 
+<html> 
+ 
+<head> 
+ <meta name="viewport" content="width=device-width, initial-scale=1"> 
+ 
+ <script> 
+  function listboxSelectDeselect(isSelect) 
+  { 
+   var listbox = document.getElementById("lstid"); 
+   for (var i = 0; i < listbox.options.length; i++) 
+   { 
+    listbox.options[i].selected = isSelect; 
+   } 
+  } 
+ </script> 
+ 
+</head> 
+ 
+<body> 
+ 
+ <select id="lstid" size="15" multiple=""> 
+  <option value="1">Merbin</option> 
+  <option value="2">Franklin</option> 
+  <option value="3">Jose</option> 
+  <option value="4">Geetha</option> 
+  <option value="5">Jino</option> 
+  <option value="6">Ganesh</option> 
+  <option value="7">Kumar</option> 
+  <option value="8">Reegan</option> 
+  <option value="9">Rajesh</option> 
+ </select> 
+ <br> 
+ <button onclick="listboxSelectDeselect(true);">Select All</button> 
+ <button onclick="listboxSelectDeselect(false);">Deselect All</button> 
+ 
+</body> 
+ 
+</html>

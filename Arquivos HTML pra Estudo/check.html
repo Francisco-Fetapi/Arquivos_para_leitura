@@ -1,0 +1,32 @@
+<!DOCTYPE html> 
+<html> 
+ 
+<head> 
+ <meta name="viewport" content="width=device-width, initial-scale=1"> 
+</head> 
+ 
+<body> 
+ <select id="ddl1"> 
+    <option value="1" data-color="Yellow Color">Bannana</option> 
+    <option value="2" data-color="Black Color">Graps</option> 
+    <option value="3" data-color="Red Color">Apple</option> 
+    <option value="3" data-color="Orange Color">Mango</option> 
+  </select> 
+ 
+ <br /> 
+ <input type="button" value="Check Color" onclick="chk_clor();"> 
+ 
+ <script> 
+  function chk_clor() 
+  { 
+   // Plain old JavaScript 
+   var sel = document.getElementById('ddl1'); 
+   var selected = sel.options[sel.selectedIndex]; 
+   var clr = selected.getAttribute('data-color'); 
+   alert(clr); 
+  } 
+ </script> 
+ 
+</body> 
+ 
+</html>

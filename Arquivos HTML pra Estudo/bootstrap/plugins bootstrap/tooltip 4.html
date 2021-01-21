@@ -1,0 +1,74 @@
+<!DOCTYPE html> 
+<html> 
+ 
+<head> 
+ <meta charset="utf-8"> 
+ <title>Example of Creating Custom Template for Bootstrap 3 Tooltips</title> 
+ <meta name="viewport" content="width=device-width, initial-scale=1"> 
+ <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css"> 
+ <!-- Optional Bootstrap theme --> 
+ <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.css"> 
+ 
+ <style type="text/css"> 
+  .bs-example { 
+   margin: 200px 100px; 
+  } 
+   
+  .bs-example a { 
+   margin: 25px; 
+   font-size: 20px; 
+  } 
+  /* Styles for custom tooltip template */ 
+   
+  .tooltip-head { 
+   color: #fff; 
+   background: #000; 
+   padding: 10px 10px 5px; 
+   border-radius: 4px 4px 0 0; 
+   text-align: center; 
+   margin-bottom: -2px; 
+   /* Hide default tooltip rounded corner from top */ 
+  } 
+   
+  .tooltip-head .glyphicon { 
+   font-size: 22px; 
+   vertical-align: bottom; 
+  } 
+   
+  .tooltip-head h3 { 
+   margin: 0; 
+   font-size: 18px; 
+  } 
+ </style> 
+ 
+</head> 
+ 
+<body> 
+ 
+ <div class="bs-example"> 
+  <div id="myTooltips"> 
+   <a href="#" data-toggle="tooltip" title="Open this document for editing in a text editor."><span class="glyphicon glyphicon-edit"></span></a> 
+   <a href="#" data-toggle="tooltip" title="Save this document on the remote web server on a permanent basis."><span class="glyphicon glyphicon-floppy-disk"></span></a> 
+   <a href="#" data-toggle="tooltip" title="Download this document from the remote server."><span class="glyphicon glyphicon-download-alt"></span></a> 
+   <a href="#" data-toggle="tooltip" title="Print this document using a printer installed on your machine."><span class="glyphicon glyphicon-print"></span></a> 
+   <a href="#" data-toggle="tooltip" title="Delete this document permanently."><span class="glyphicon glyphicon-trash"></span></a> 
+   <a href="#" data-toggle="tooltip" title="Document Settings"><span class="glyphicon glyphicon-cog"></span></a> 
+  </div> 
+ </div> 
+ 
+ <script src="bootstrap/js/jquery.js"></script> 
+ <script src="bootstrap/js/bootstrap.js"></script> 
+ 
+ <script type="text/javascript"> 
+  $(document).ready(function() 
+  { 
+   $("#myTooltips a").tooltip( 
+   { 
+    template: '<div class="tooltip"><div class="tooltip-arrow"></div><div class="tooltip-head"><h3><span class="glyphicon glyphicon-info-sign"></span> Tool Info</h3></div><div class="tooltip-inner"></div></div>' 
+   }); 
+  }); 
+ </script> 
+ 
+</body> 
+ 
+</html>

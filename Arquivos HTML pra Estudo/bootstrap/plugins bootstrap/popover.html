@@ -1,0 +1,50 @@
+<!DOCTYPE html> 
+<html> 
+ 
+<head> 
+ <meta charset="utf-8"> 
+ <title>Example of Bootstrap 3 Popover</title> 
+ <meta name="viewport" content="width=device-width, initial-scale=1"> 
+ <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css"> 
+ <!-- Optional Bootstrap theme --> 
+ <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.css"> 
+ <style type="text/css"> 
+  .bs-example { 
+   margin: 150px 50px; 
+  } 
+   
+  .popover-demo { 
+   margin-bottom: 20px; 
+  } 
+ </style> 
+ 
+</head> 
+ 
+<body> 
+ 
+ <div class="bs-example"> 
+  <div class="popover-demo"> 
+   <button type="button" class="btn btn-primary" data-toggle="popover" title="Popover title" data-content="Default popover">Popover</button> 
+   <button type="button" class="btn btn-success" data-toggle="popover" title="Popover title" data-content="Another popover">Another popover</button> 
+   <button type="button" class="btn btn-info" data-toggle="popover" title="Popover title" data-content="A larger popover to demonstrate the max-width of the Bootstrap popover.">Large popover</button> 
+   <button type="button" class="btn btn-warning" data-toggle="popover" title="Popover title" data-content="The last popover!">Last popover</button> 
+  </div> 
+  <p><strong>Note:</strong> Click on the buttons to display the popover.</p> 
+ </div> 
+ 
+ <script src="bootstrap/js/jquery.js"></script> 
+ <script src="bootstrap/js/bootstrap.js"></script> 
+ 
+ <script type="text/javascript"> 
+  $(document).ready(function() 
+  { 
+   $('[data-toggle="popover"]').popover( 
+   { 
+    placement: 'top' 
+   }); 
+  }); 
+ </script> 
+ 
+</body> 
+ 
+</html>
